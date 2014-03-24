@@ -88,6 +88,16 @@ user    0m2.003s
 sys     0m0.897s
 ```
 
+```
+time for x in `seq 100`; do 9738028/a.out > /dev/null; done
+```
+
+```
+real    0m0.244s
+user    0m0.052s
+sys     0m0.119s
+```
+
 ### Rich
 
 ```
