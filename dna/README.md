@@ -10,6 +10,18 @@ for base in A C G T; do echo -n $base && grep -o $base sample.txt | wc -l; done
 
 ## Timings:
 
+### Elisabeth
+
+```
+time for x in `seq 100`; do perl 9736716/dna_emb.pl < sample.txt > /dev/null; done
+```
+
+```
+real    0m5.722s
+user    0m4.058s
+sys     0m0.573s
+```
+
 ### Ian
 
 ```
