@@ -8,6 +8,26 @@ http://rosalind.info/problems/dna/
 for base in A C G T; do echo -n $base && grep -o $base sample.txt | wc -l; done
 ```
 
+## Other solutions:
+
+### Perl
+
+* https://gist.github.com/EBuschNentwich/9736716
+
+* https://gist.github.com/richysix/e3aee011a5a150b3856b
+
+### Python
+
+* https://gist.github.com/fourpartswater/92fe9d3967192d093560
+
+* https://gist.github.com/richysix/dbfa59336f196180988e
+
+### C
+
+* https://gist.github.com/jazberna/9685358
+
+* https://gist.github.com/fourpartswater/9738028
+
 ## Timings:
 
 ### Elisabeth
