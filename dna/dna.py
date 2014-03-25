@@ -14,7 +14,7 @@ def main(args):
 
     output = [s.count(base) for base in ['A', 'C', 'G', 'T']]
 
-    print('{0} {1} {2} {3}'.format(*output))
+    print('{0[0]} {0[1]} {0[2]} {0[3]}'.format(output))
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Counting DNA Nucleotides')
