@@ -7,3 +7,9 @@ http://rosalind.info/problems/rna/
 ```
 sed -e 's/T/U/g' sample.txt
 ```
+
+## Other solutions:
+
+### C
+
+* https://gist.github.com/jazberna/9765921
