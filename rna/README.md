@@ -10,9 +10,15 @@ sed -e 's/T/U/g' sample.txt
 
 ## Other solutions:
 
+### Perl
+
+* https://gist.github.com/EBuschNentwich/9895756
+
 ### Python
 
 * https://gist.github.com/richysix/55511481271f37f82285
+
+* ```print (''.join([line.strip().replace("T","U") for line in open('sample.txt')]))```
 
 ### C
 
