@@ -19,7 +19,7 @@ def main(args):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Counting DNA Nucleotides')
     parser.add_argument('dataset', metavar='FILE', type=argparse.FileType('r'),
-        help='File containing "A DNA string s of length at most 1000 nt"')
+        help='File containing "A DNA string s of length at most 1000 nt')
     args = parser.parse_args()
 
     main(args)
