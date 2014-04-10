@@ -9,14 +9,14 @@ import argparse
 def main(args):
     """Transcribing DNA into RNA"""
 
-    s = args.dataset.read()
+    t = args.dataset.read()
 
-    print(s.replace('T', 'U'), end='')
+    print(t.replace('T', 'U'), end='')
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Transcribing DNA into RNA')
     parser.add_argument('dataset', metavar='FILE', type=argparse.FileType('r'),
-        help='File containing "A DNA string t having length at most 1000 nt"')
+        help='File containing "A DNA string t having length at most 1000 nt')
     args = parser.parse_args()
 
     main(args)
