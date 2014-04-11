@@ -10,6 +10,10 @@ tr 'ACGT' 'TGCA' < sample.txt | rev
 
 ## Other solutions:
 
+### Perl
+
+* https://gist.github.com/EBuschNentwich/10462028
+
 ### Python
 
 * https://gist.github.com/fourpartswater/7663409e2b25fb698e68
