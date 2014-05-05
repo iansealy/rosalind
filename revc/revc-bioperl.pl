@@ -33,7 +33,7 @@ my $in = Bio::SeqIO->new(
 my $s = $in->next_seq;
 
 # Reverse complement
-print $s->revcom->seq, "\n";
+printf "%s\n", $s->revcom->seq;
 
 # Get and check command line options
 sub get_and_check_options {

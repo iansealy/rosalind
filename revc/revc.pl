@@ -33,7 +33,7 @@ my $sc = reverse $s;
 $sc =~ tr/ACGT/TGCA/;
 
 # Print output
-print $sc, "\n";
+printf "%s\n", $sc;
 
 # Get and check command line options
 sub get_and_check_options {
