@@ -14,6 +14,6 @@ http://rosalind.info/problems/fib/
 
 * https://gist.github.com/richysix/e6351893ba0d392ff228
 
-### C
+### C++
 
 * https://gist.github.com/jazberna/e889b570529190771d93
