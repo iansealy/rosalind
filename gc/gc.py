@@ -14,8 +14,7 @@ def main(args):
     high_gc = 0
 
     for id, seq in read_fasta(args.dataset):
-        count = [seq.count(base) for base in ['C', 'G']]
-        gc = ( count[0] + count[1] ) / len(seq)
+        gc = ( seq.count('C') + seq.count('G') ) / len(seq)
         if gc > high_gc:
             high_id = id
             high_gc = gc
