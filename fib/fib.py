@@ -12,9 +12,9 @@ from functools import lru_cache
 def main(args):
     """Rabbits and Recurrence Relations"""
 
-    (n, k) = args.dataset.read().split()
+    (n, k) = [int(x) for x in args.dataset.read().split()]
 
-    print(fib(int(n), int(k)))
+    print(fib(n, k))
 
 @lru_cache()
 def fib(n, k):
