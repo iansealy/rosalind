@@ -12,6 +12,8 @@ http://rosalind.info/problems/gc/
 
 * https://gist.github.com/richysix/dde709cbf5937ea1fdd3
 
+* https://gist.github.com/fourpartswater/0e3738ffeeeed44f227b
+
 ### C++
 
 * https://gist.github.com/jazberna/88d75dd32f9a98806906
