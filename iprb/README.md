@@ -4,6 +4,10 @@ http://rosalind.info/problems/iprb/
 
 ## Other solutions:
 
+### Perl
+
+* https://gist.github.com/EBuschNentwich/fd36614ce8a39eec1558
+
 ### Python
 
 * https://gist.github.com/richysix/473637242b5fff277187
