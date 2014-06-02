@@ -8,6 +8,7 @@ individual possessing a dominant allele (and thus displaying the dominant
 phenotype)".
 """
 
+from __future__ import division
 import argparse
 
 def main(args):
