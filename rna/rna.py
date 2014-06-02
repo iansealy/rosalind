@@ -4,6 +4,7 @@
 returns "The transcribed RNA string of t".
 """
 
+from __future__ import print_function
 import argparse
 
 def main(args):
