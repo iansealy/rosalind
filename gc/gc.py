@@ -5,6 +5,7 @@ most 1 kbp each)" and returns "The ID of the string having the highest
 GC-content, followed by the GC-content of that string".
 """
 
+from __future__ import division
 import argparse
 
 def main(args):
