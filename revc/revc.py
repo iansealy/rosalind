@@ -4,14 +4,22 @@
 returns "The reverse complement sc of s".
 """
 
+import sys
 import argparse
+
+# Ensure maketrans works in Python 2 and 3
+if sys.version_info[0] >= 3:
+    maketrans = str.maketrans
+else:
+    import string
+    maketrans = string.maketrans
 
 def main(args):
     """Complementing a Strand of DNA"""
 
     s = args.dataset.read()
 
-    print(s.rstrip().translate(str.maketrans('ACGT', 'TGCA'))[::-1])
+    print(s.rstrip().translate(maketrans('ACGT', 'TGCA'))[::-1])
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Complementing a Strand of DNA')
