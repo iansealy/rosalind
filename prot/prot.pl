@@ -148,7 +148,7 @@ __END__
 
 =head1 NAME
 
-dna.pl
+prot.pl
 
 Translating RNA into Protein
 
