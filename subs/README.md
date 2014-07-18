@@ -6,4 +6,6 @@ http://rosalind.info/problems/subs/
 
 ### Perl
 
+* https://gist.github.com/EBuschNentwich/4afc942e7b55cd0037c2
+
 * https://gist.github.com/jazberna/b62c3230c26410f64785
