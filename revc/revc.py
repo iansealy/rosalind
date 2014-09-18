@@ -14,6 +14,7 @@ else:
     import string
     maketrans = string.maketrans
 
+
 def main(args):
     """Complementing a Strand of DNA"""
 
@@ -22,8 +23,10 @@ def main(args):
     print(s.rstrip().translate(maketrans('ACGT', 'TGCA'))[::-1])
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Complementing a Strand of DNA')
-    parser.add_argument('dataset', metavar='FILE', type=argparse.FileType('r'),
+    parser = argparse.ArgumentParser(
+        description='Complementing a Strand of DNA')
+    parser.add_argument(
+        'dataset', metavar='FILE', type=argparse.FileType('r'),
         help='A DNA string s of length at most 1000 bp')
     args = parser.parse_args()
 

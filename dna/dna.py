@@ -7,6 +7,7 @@ that the symbols 'A', 'C', 'G', and 'T' occur in s".
 
 import argparse
 
+
 def main(args):
     """Counting DNA Nucleotides"""
 
@@ -18,7 +19,8 @@ def main(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Counting DNA Nucleotides')
-    parser.add_argument('dataset', metavar='FILE', type=argparse.FileType('r'),
+    parser.add_argument(
+        'dataset', metavar='FILE', type=argparse.FileType('r'),
         help='File containing "A DNA string s of length at most 1000 nt')
     args = parser.parse_args()
 

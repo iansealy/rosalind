@@ -10,6 +10,7 @@ from Bio import SeqIO
 from Bio.Alphabet import generic_dna
 from Bio.SeqUtils import GC
 
+
 def main(args):
     """Computing GC Content"""
 
@@ -27,8 +28,10 @@ def main(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Computing GC Content')
-    parser.add_argument('dataset', metavar='FILE', type=argparse.FileType('r'),
-        help='At most 10 DNA strings in FASTA format (of length at most 1 kbp each)')
+    parser.add_argument(
+        'dataset', metavar='FILE', type=argparse.FileType('r'),
+        help='At most 10 DNA strings in FASTA format '
+        '(of length at most 1 kbp each)')
     args = parser.parse_args()
 
     main(args)

@@ -9,12 +9,14 @@ litter of k rabbit pairs (instead of only 1 pair)".
 import argparse
 from functools import lru_cache
 
+
 def main(args):
     """Rabbits and Recurrence Relations"""
 
     (n, k) = [int(x) for x in args.dataset.read().split()]
 
     print(fib(n, k))
+
 
 @lru_cache()
 def fib(n, k):
@@ -23,11 +25,13 @@ def fib(n, k):
     if n == 1 or n == 2:
         return 1
 
-    return fib( n - 1, k ) + fib( n - 2, k ) * k;
+    return fib(n - 1, k) + fib(n - 2, k) * k
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Rabbits and Recurrence Relations')
-    parser.add_argument('dataset', metavar='FILE', type=argparse.FileType('r'),
+    parser = argparse.ArgumentParser(
+        description='Rabbits and Recurrence Relations')
+    parser.add_argument(
+        'dataset', metavar='FILE', type=argparse.FileType('r'),
         help='Positive integers n≤40 and k≤5')
     args = parser.parse_args()
 

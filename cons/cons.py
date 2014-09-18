@@ -8,6 +8,7 @@ matrix for the collection".
 import argparse
 from collections import defaultdict
 
+
 def main(args):
     """Consensus and Profile"""
 
@@ -22,6 +23,7 @@ def main(args):
     print(''.join(max(counts, key=counts.get) for counts in profile))
     for base in 'ACGT':
         print(base + ':', ' '.join(str(counts[base]) for counts in profile))
+
 
 def read_fasta(file):
     """Read FASTA file record by record"""
@@ -42,8 +44,10 @@ def read_fasta(file):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Consensus and Profile')
-    parser.add_argument('dataset', metavar='FILE', type=argparse.FileType('r'),
-        help='A collection of at most 10 DNA strings of equal length (at most 1 kbp) in FASTA format')
+    parser.add_argument(
+        'dataset', metavar='FILE', type=argparse.FileType('r'),
+        help='A collection of at most 10 DNA strings of equal length '
+        '(at most 1 kbp) in FASTA format')
     args = parser.parse_args()
 
     main(args)
