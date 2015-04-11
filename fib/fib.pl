@@ -87,7 +87,7 @@ version 0.1.0
 
 =head1 DESCRIPTION
 
-This script is given "Positive integers n²40 and k²5" and returns "The total
+This script is given "Positive integers nâ‰¤40 and kâ‰¤5" and returns "The total
 number of rabbit pairs that will be present after n months if we begin with 1
 pair and in each generation, every pair of reproduction-age rabbits produces a
 litter of k rabbit pairs (instead of only 1 pair)".
@@ -110,7 +110,7 @@ litter of k rabbit pairs (instead of only 1 pair)".
 
 =item B<--dataset_file FILE>
 
-File containing "Positive integers n²40 and k²5".
+File containing "Positive integers nâ‰¤40 and kâ‰¤5".
 
 =item B<--debug>
 
