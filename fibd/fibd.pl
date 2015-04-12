@@ -110,7 +110,7 @@ live for m months".
 
 =head1 USAGE
 
-    fib.pl
+    fibd.pl
         [--dataset_file file]
         [--debug]
         [--help]
