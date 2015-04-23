@@ -2,6 +2,9 @@
 
 http://rosalind.info/problems/lcsm/
 
+__Note__ that the naive Perl-based suffix trie in lcsm.pl works for the sample
+dataset, but memory usage blows up for a real dataset.
+
 ## Other solutions:
 
 ### Perl
