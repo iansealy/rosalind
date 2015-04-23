@@ -7,3 +7,7 @@ http://rosalind.info/problems/fibd/
 ### C++
 
 * https://gist.github.com/jazberna/8e35fad6c0b788fe2067
+
+### Python
+
+* https://gist.github.com/richysix/260d42e58abac7499933
