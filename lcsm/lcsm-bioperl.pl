@@ -17,7 +17,6 @@ use version; our $VERSION = qv('v0.1.0');
 
 use Bio::SeqIO;
 use List::Util qw(max);
-use Tree::Suffix;
 
 # Default options
 my $dataset_file;
