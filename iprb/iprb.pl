@@ -16,7 +16,7 @@ use Carp;
 use version; our $VERSION = qv('v0.1.0');
 
 use Readonly;
-use File::Slurp;
+use Path::Tiny;
 use List::Util qw( sum );
 
 # Genotype constants
@@ -33,7 +33,7 @@ my ( $debug, $help, $man );
 get_and_check_options();
 
 # Get input
-my ( $k, $m, $n ) = split /\s+/xms, read_file($dataset_file);
+my ( $k, $m, $n ) = split /\s+/xms, path($dataset_file)->slurp;
 
 my $prob_dom_phenotype = 0;
 my @population = ( $k, $m, $n );

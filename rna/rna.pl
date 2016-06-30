@@ -15,7 +15,7 @@ use Pod::Usage;
 use Carp;
 use version; our $VERSION = qv('v0.1.0');
 
-use File::Slurp;
+use Path::Tiny;
 
 # Default options
 my $dataset_file;
@@ -25,7 +25,7 @@ my ( $debug, $help, $man );
 get_and_check_options();
 
 # Get input
-my $t = read_file($dataset_file);
+my $t = path($dataset_file)->slurp;
 
 # Transcribe
 $t =~ s/T/U/xmsg;

@@ -15,7 +15,7 @@ use Pod::Usage;
 use Carp;
 use version; our $VERSION = qv('v0.1.0');
 
-use File::Slurp;
+use Path::Tiny;
 use Memoize qw( memoize );
 
 # Default options
@@ -26,7 +26,7 @@ my ( $debug, $help, $man );
 get_and_check_options();
 
 # Get input
-my ( $input_n, $input_k ) = split /\s+/xms, read_file($dataset_file);
+my ( $input_n, $input_k ) = split /\s+/xms, path($dataset_file)->slurp;
 
 # Print output
 memoize('fib');

@@ -16,7 +16,7 @@ use Carp;
 use version; our $VERSION = qv('v0.1.0');
 
 use Readonly;
-use File::Slurp;
+use Path::Tiny;
 
 # Genetic code constants
 Readonly our %AMINO_ACID_FOR => (
@@ -94,7 +94,7 @@ my ( $debug, $help, $man );
 get_and_check_options();
 
 # Get input
-my $s = read_file($dataset_file);
+my $s = path($dataset_file)->slurp;
 chomp $s;
 
 # Translate
