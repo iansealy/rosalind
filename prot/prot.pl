@@ -19,7 +19,7 @@ use Readonly;
 use File::Slurp;
 
 # Genetic code constants
-Readonly our %AMINO_ACID_FOR = (
+Readonly our %AMINO_ACID_FOR => (
     AAA => q{K},
     AAC => q{N},
     AAG => q{K},
